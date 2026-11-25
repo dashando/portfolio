@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Градиент для деревянной ручки -->
+    <linearGradient id="handleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513"/>
+      <stop offset="30%" style="stop-color:#D2691E"/>
+      <stop offset="60%" style="stop-color:#A0522D"/>
+      <stop offset="100%" style="stop-color:#654321"/>
+    </linearGradient>
+    
+    <!-- Градиент для металлической обоймы -->
+    <linearGradient id="ferruleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C0C0C0"/>
+      <stop offset="30%" style="stop-color:#E8E8E8"/>
+      <stop offset="50%" style="stop-color:#FFFFFF"/>
+      <stop offset="70%" style="stop-color:#A9A9A9"/>
+      <stop offset="100%" style="stop-color:#808080"/>
+    </linearGradient>
+    
+    <!-- Градиент для щетины -->
+    <linearGradient id="bristleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5DEB3"/>
+      <stop offset="50%" style="stop-color:#DEB887"/>
+      <stop offset="100%" style="stop-color:#D2691E"/>
+    </linearGradient>
+    
+    <!-- Градиент для краски на кончике -->
+    <radialGradient id="paintGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF6B6B"/>
+      <stop offset="70%" style="stop-color:#C0392B"/>
+      <stop offset="100%" style="stop-color:#8B0000"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Фон -->
+  <rect width="200" height="200" fill="#2C1810" rx="15"/>
+  
+  <!-- Кисть (повёрнута под углом) -->
+  <g transform="translate(100, 100) rotate(-45) translate(-100, -100)">
+    
+    <!-- Деревянная ручка -->
+    <rect x="85" y="30" width="30" height="90" rx="3" fill="url(#handleGrad)"/>
+    <!-- Текстура дерева -->
+    <line x1="90" y1="35" x2="90" y2="115" stroke="#654321" stroke-width="0.5" opacity="0.5"/>
+    <line x1="95" y1="35" x2="95" y2="115" stroke="#654321" stroke-width="0.5" opacity="0.3"/>
+    <line x1="100" y1="35" x2="100" y2="115" stroke="#654321" stroke-width="0.5" opacity="0.5"/>
+    <line x1="105" y1="35" x2="105" y2="115" stroke="#654321" stroke-width="0.5" opacity="0.3"/>
+    <line x1="110" y1="35" x2="110" y2="115" stroke="#654321" stroke-width="0.5" opacity="0.5"/>
+    
+    <!-- Металлическая обойма (феррул) -->
+    <rect x="83" y="120" width="34" height="20" rx="2" fill="url(#ferruleGrad)"/>
+    <!-- Детали обоймы -->
+    <line x1="83" y1="125" x2="117" y2="125" stroke="#808080" stroke-width="1"/>
+    <line x1="83" y1="135" x2="117" y2="135" stroke="#808080" stroke-width="1"/>
+    
+    <!-- Щетина кисти -->
+    <path d="M 85 140 L 80 175 Q 100 180 120 175 L 115 140 Z" fill="url(#bristleGrad)"/>
+    <!-- Отдельные волоски щетины -->
+    <line x1="88" y1="142" x2="85" y2="172" stroke="#D2B48C" stroke-width="0.8" opacity="0.6"/>
+    <line x1="92" y1="142" x2="90" y2="174" stroke="#D2B48C" stroke-width="0.8" opacity="0.6"/>
+    <line x1="96" y1="142" x2="95" y2="175" stroke="#D2B48C" stroke-width="0.8" opacity="0.6"/>
+    <line x1="100" y1="142" x2="100" y2="176" stroke="#D2B48C" stroke-width="0.8" opacity="0.6"/>
+    <line x1="104" y1="142" x2="105" y2="175" stroke="#D2B48C" stroke-width="0.8" opacity="0.6"/>
+    <line x1="108" y1="142" x2="110" y2="174" stroke="#D2B48C" stroke-width="0.8" opacity="0.6"/>
+    <line x1="112" y1="142" x2="115" y2="172" stroke="#D2B48C" stroke-width="0.8" opacity="0.6"/>
+    
+    <!-- Краска на кончике кисти -->
+    <ellipse cx="100" cy="176" rx="18" ry="6" fill="url(#paintGrad)"/>
+    <path d="M 82 175 Q 85 180 88 175" fill="#C0392B" opacity="0.7"/>
+    <path d="M 112 175 Q 115 180 118 175" fill="#C0392B" opacity="0.7"/>
+  </g>
+  
+  <!-- Капля краски рядом с кистью -->
+  <ellipse cx="50" cy="160" rx="12" ry="8" fill="#C0392B" opacity="0.8"/>
+  <ellipse cx="52" cy="158" rx="4" ry="3" fill="#FF6B6B" opacity="0.6"/>
+  
+  <ellipse cx="155" cy="150" rx="8" ry="6" fill="#D4A574" opacity="0.7"/>
+  <ellipse cx="157" cy="148" rx="3" ry="2" fill="#F5DEB3" opacity="0.5"/>
+</svg>
